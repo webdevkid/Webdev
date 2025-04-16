@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watch to Learn</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="optical.html">Optical Illusions</a></li>
+      <li><a href="auditory.html">Auditory Illusions</a></li>
+    </ul>
+  </nav>
+
+  <div class="parallax" style="background-image: url('https://myvision.org/wp-content/uploads/2022/05/optical-illusions-664x443.jpg');"></div>
+
+  <h1>Videos on illusions
+
+  <div class="info-section">
+    <h2>Watch and Learn</h2>
+    <p>These videos showcase a variety of illusions, from optical tricks to auditory phenomena. Dive into the explanations and examples that reveal how our senses can be deceived in entertaining and educational ways. Enjoy a curated selection that highlights the best of illusionary content available online.</p>
+  </div>
+
+  <div class="video-container">
+    <div class="video-card">
+      <h2>Good Optical Illusions</h2>
+      <iframe src="https://www.youtube.com/embed/kzo45hWXRWU" allowfullscreen></iframe>
+    </div>
+    <div class="video-card">
+      <h2>Understanding Illusions</h2>
+      <iframe src="https://www.youtube.com/embed/rfdJyDfIHIc" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="modal" id="imageModal" onclick="closeModal()">
+    <img id="modalImage" src="" alt="Full view">
+  </div>
+
+  <footer>
+    <p>More at <a href="https://en.wikipedia.org/wiki/Auditory_illusion" target="_blank">Wikipedia</a></p>
+  </footer>
+
+  <script>
+    function openModal(src) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      modalImg.src = src;
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>

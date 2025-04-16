@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Optical Illusions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="optical.html">Optical Illusions</a></li>
+      <li><a href="auditory.html">Auditory Illusions</a></li>
+    </ul>
+  </nav>
+
+  <div class="parallax" style="background-image: url('https://www.rd.com/wp-content/uploads/2021/07/GettyImages-1278770741.jpg');"></div>
+
+  <h1>Optical Illusions</h1>
+
+  <div class="info-section">
+    <h2>Understanding Optical Illusions</h2>
+    <p>Optical illusions manipulate visual perception through clever use of shapes, colors, and patterns. They exploit the brain's assumptions about the world, creating impossible figures or ambiguous images. Famous examples include the Rubin Vase and the Penrose Triangle. Explore how these illusions work and why they fascinate us at <a href="https://en.wikipedia.org/wiki/Optical_illusion" target="_blank">Wikipedia</a>.</p>
+  </div>
+
+  <div class="modal" id="imageModal" onclick="closeModal()">
+    <img id="modalImage" src="" alt="Full view">
+  </div>
+
+  <footer>
+    <p>Explore <a href="https://en.wikipedia.org/wiki/Optical_illusion" target="_blank">Wikipedia</a></p>
+  </footer>
+
+  <script>
+    function openModal(src) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      modalImg.src = src;
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>

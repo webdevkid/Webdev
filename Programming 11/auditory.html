@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auditory Illusions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="optical.html">Optical Illusions</a></li>
+      <li><a href="auditory.html">Auditory Illusions</a></li>
+    </ul>
+  </nav>
+
+  <div class="parallax" style="background-image: url('https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/65191491e63932001d432baa.jpg');"></div>
+
+  <h1>Auditory Illusions</h1>
+
+  <div class="info-section">
+    <h2>Hearing the Unreal</h2>
+    <p>Auditory illusions deceive your brain. Examples include the Shepard Tone and other fractal/falling sounds. Explore more at <a href="https://en.wikipedia.org/wiki/Auditory_illusion" target="_blank">Wikipedia</a>.</p>
+  </div>
+
+  <div class="video-container">
+    <div class="video-card">
+      <h2>Sherpards Tone</h2>
+      <iframe src="https://www.youtube.com/embed/kzo45hWXRWU" allowfullscreen></iframe>
+    </div>
+    <div class="video-card">
+      <h2>Falling Staircase</h2>
+      <iframe src="https://www.youtube.com/embed/rfdJyDfIHIc" allowfullscreen></iframe>
+    </div>
+
+  </div>
+  <div class="modal" id="imageModal" onclick="closeModal()">
+    <img id="modalImage" src="" alt="Full view">
+  </div>
+
+  <div class="modal" id="imageModal" onclick="closeModal()">
+    <img id="modalImage" src="" alt="Full view">
+  </div>
+
+  <footer>
+    <p>More at <a href="https://en.wikipedia.org/wiki/Auditory_illusion" target="_blank">Wikipedia</a></p>
+  </footer>
+
+  <script>
+    function openModal(src) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      modalImg.src = src;
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>

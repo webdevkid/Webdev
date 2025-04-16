@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Illusions!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="optical.html">Optical Illusions</a></li>
+      <li><a href="auditory.html">Auditory Illusions</a></li>
+    </ul>
+  </nav>
+
+  <div class="parallax" style="background-image: url('https://media.wired.com/photos/5932352daef9a462de9815d0/master/pass/illusion-ft.jpg');"></div>
+
+  <h1>Illusions!</h1>
+
+  <div class="info-section">
+    <h2>Welcome to illusions
+    <p>Learn the difference in auditorial and optical illusions and how they work.</p>
+  </div>
+
+  <div class="modal" id="imageModal" onclick="closeModal()">
+    <img id="modalImage" src="" alt="Full view">
+  </div>
+
+  <footer>
+    <p>Learn more at <a href="https://en.wikipedia.org/wiki/Illusion" target="_blank">Wikipedia</a></p>
+  </footer>
+
+  <script>
+    function openModal(imageSrc) {
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+      modalImage.src = imageSrc;
+      modal.style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('imageModal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
